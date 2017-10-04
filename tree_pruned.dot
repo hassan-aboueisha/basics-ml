@@ -1,0 +1,16 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Glucose <= 123.5\ngini = 0.461\nsamples = 614\nvalue = [393, 221]\nclass = healthy"] ;
+1 [label="Age <= 28.5\ngini = 0.301\nsamples = 352\nvalue = [287, 65]\nclass = healthy"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.162\nsamples = 202\nvalue = [184, 18]\nclass = healthy"] ;
+1 -> 2 ;
+3 [label="gini = 0.43\nsamples = 150\nvalue = [103, 47]\nclass = healthy"] ;
+1 -> 3 ;
+4 [label="BMI <= 30.05\ngini = 0.482\nsamples = 262\nvalue = [106, 156]\nclass = ill"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="gini = 0.438\nsamples = 74\nvalue = [50, 24]\nclass = healthy"] ;
+4 -> 5 ;
+6 [label="gini = 0.418\nsamples = 188\nvalue = [56, 132]\nclass = ill"] ;
+4 -> 6 ;
+}
